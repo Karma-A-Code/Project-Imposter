@@ -20,4 +20,16 @@ public class GameConfig : ScriptableObject
     [Header("Genre Selection")]
     public string SelectedGenre = "Example Genre";
 
+
+
+    public void IncrementGamesPlayed()
+    {
+        TotalGamesPlayed++;
+    }
+
+    public void PassThroughPlayerCount (int count)
+    {
+        PlayerCount = count;
+    }
+
 }
